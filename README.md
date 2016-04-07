@@ -27,27 +27,30 @@ The RESTful API for Posts and Comments, where Users can view, create, update, an
 Steps:
 
 1. Run [Composer](https://getcomposer.org/doc/00-intro.md)
+
 	```
 		composer install
 	```
 2. Laravel Homestead
 
-If you are using Laravel Homestead, the follow the [Installation Guide](https://laravel.com/docs/5.2/homestead).
+	If you are using Laravel Homestead, then follow the [Installation Guide](https://laravel.com/docs/5.2/homestead).
 
 3. WAMP, LAMP, MAMP, XAMP Server
 
-If you are using any of WAMP, LAMP, MAMP, XAMP Servers, then create a MySQL database, and update public/index.php 
-from ```$app->run();``` to ```$app->run($app->make('request'));```.
+	If you are using any of WAMP, LAMP, MAMP, XAMP Servers, then create a MySQL database, and update public/index.php 
+	from ```$app->run();``` to ```$app->run($app->make('request'));```.
 
 
 4. Configure the```.env``` file
 
-Rename ```.env.example``` file to ```.env```, set your application key to a random string with 32 characters long, edit database name, database username, and database password if needed.
+	Rename ```.env.example``` file to ```.env```, set your application key to a random string with 32 characters long, edit database name, database username, and database password if needed.
 
 5. Finally, Run Migrations and Seed the database with fake data.
+
 	```
 		php artisan migrate --seed
 	```
+
 ## Terminology<a name="terminology"></a>
 There are some terminologies that will be used on the meaning of the terms used by OAuth 2.0. If you need a refresher, then check [this](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) out.
 
