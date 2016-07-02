@@ -23,7 +23,7 @@ class Controller extends BaseController{
     /**
      * Return a JSON response for error.
      *
-     * @param  array  $data
+     * @param  array  $message
      * @param  string $code
      * @return \Illuminate\Http\JsonResponse
      */
@@ -69,12 +69,7 @@ class Controller extends BaseController{
      * Get current authorized user id.
      * This method should be called only after validating the access token using OAuthMiddleware Middleware.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  array $resource
-     * @param  array $data
      * @return boolean
-     * 
-     * @throws LucaDegasperi\OAuth2Server\Exceptions\NoActiveAccessTokenException
      */
     protected function getUserId(){
     	return \LucaDegasperi\OAuth2Server\Facades\Authorizer::getResourceOwnerId();
