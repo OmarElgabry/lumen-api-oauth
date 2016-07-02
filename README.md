@@ -1,4 +1,6 @@
-![Lumen API OAuth](https://raw.githubusercontent.com/OmarElGabry/lumen-api-oauth/master/public/lumen-api-oauth.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/OmarElGabry/lumen-api-oauth/master/public/lumen-api-oauth.png" alt="Lumen API OAuth" />
+</p>
 
 # Lumen API OAuth
 [![Build Status](https://travis-ci.org/OmarElGabry/lumen-api-oauth.png)](https://travis-ci.org/OmarElGabry/lumen-api-oauth)
