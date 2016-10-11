@@ -23,5 +23,4 @@ class ExampleTest extends TestCase
         $response = $this->call('GET', '/');
         $this->assertResponseOk();
     }
-    
 }
