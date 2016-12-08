@@ -104,7 +104,7 @@ These are some of the routes defined in ```app/routes.php```. You can test the A
 | HTTP Method	| Path | Action | Fields  |
 | ----- | ----- | ----- | ------------- |
 | GET      | /users | index | 
-| POST     | /oauth/access_token |  | username, password, client_id, client_secret, and grant_type. <br> _The ```username``` field is the ```email``` in ```Users``` table_. <br> _The ```password``` field is **secret**_.<br> _The ```grant_type``` field is  **password**_.
+| POST     | /oauth/access_token |  | username, password, client_id, client_secret, and grant_type. <br> _The ```username``` field is the ```email``` in ```Users``` table_. <br> _The ```password``` field is **secret**_.<br> _The ```client_id``` & ```client_secret``` fields are **id0** & **secret0**, or **id1** & **secret1**, ...etc respectively_.<br> _The ```grant_type``` field is  **password**_.
 | POST      | /posts | store | access_token, title, content 
 | PUT      | /posts/{post_id} | update | access_token, title, content 
 | DELETE      | /posts/{post_id} | destroy | access_token
