@@ -15,6 +15,8 @@ A RESTful API based on Lumen micro-framework with OAuth2. Lumen API OAuth is a s
 
 The RESTful API for Posts and Comments, where Users can view, create, update, and delete. It provides authorization mechanism to authorize against access tokens using OAuth2, ownership, and non-admin Vs admin users.
 
+:mega: A full tutorial on building a RESTful API with Lumen and OAuth2 can be found on [Medium](https://medium.com/omarelgabrys-blog/building-restful-apis-with-lumen-and-oauth2-8ba279c6a31).
+
 ## Index
 + [Installation](#installation)
 + [Terminology](#terminology)
