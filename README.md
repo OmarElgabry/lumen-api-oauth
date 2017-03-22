@@ -39,9 +39,7 @@ Steps:
 
 3. WAMP, LAMP, MAMP, XAMP Server
 
-	If you are using any of WAMP, LAMP, MAMP, XAMP Servers, then create a MySQL database, and update public/index.php 
-	from ```$app->run();``` to ```$app->run($app->make('request'));```.
-
+	If you are using any of WAMP, LAMP, MAMP, XAMP Servers, then don't forget to create a database, probably a MySQL database.
 
 4. Configure the```.env``` file
 
