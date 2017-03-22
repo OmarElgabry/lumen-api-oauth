@@ -60,14 +60,15 @@ $app->singleton(
 */
 
 $app->middleware([
-		\LucaDegasperi\OAuth2Server\Middleware\OAuthExceptionHandlerMiddleware::class
+    //    App\Http\Middleware\ExampleMiddleware::class
+	\LucaDegasperi\OAuth2Server\Middleware\OAuthExceptionHandlerMiddleware::class
 ]);
 
 $app->routeMiddleware([
-		// 'auth' => App\Http\Middleware\Authenticate::class,
-	    'oauth' => \LucaDegasperi\OAuth2Server\Middleware\OAuthMiddleware::class,
-	    // 'oauth-user'=> \LucaDegasperi\OAuth2Server\Middleware\OAuthUserOwnerMiddleware::class,
-	    'authorize' => App\Http\Middleware\Authorize::class,
+	// 'auth' => App\Http\Middleware\Authenticate::class,
+    'oauth' => \LucaDegasperi\OAuth2Server\Middleware\OAuthMiddleware::class,
+    // 'oauth-user'=> \LucaDegasperi\OAuth2Server\Middleware\OAuthUserOwnerMiddleware::class,
+    'authorize' => App\Http\Middleware\Authorize::class,
 ]);
 
 /*

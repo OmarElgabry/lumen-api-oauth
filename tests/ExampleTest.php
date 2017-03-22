@@ -1,5 +1,6 @@
 <?php
 
+use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
@@ -18,7 +19,8 @@ class ExampleTest extends TestCase
         );
     }
 
-    public function testHomePage(){
+    public function testHomePage()
+    {
         
         $response = $this->call('GET', '/');
         $this->assertResponseOk();
